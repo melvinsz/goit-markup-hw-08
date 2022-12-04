@@ -8,7 +8,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-
   // mobile
   @media screen and (min-width: $mob) {
     width: $mob;
