@@ -1,0 +1,69 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-background-color);
+
+  &-wrapper {
+    @media screen and (min-width: $tab) and (max-width: $desk - 0.02px) {
+      margin-top: 60px;
+    }
+  }
+}
+.footer__container {
+  @media screen and (min-width: $tab) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $tab) and (max-width: $desk - 0.02px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.footer-contacts {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: $tab) {
+    margin-right: 70px;
+    width: 231px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desk) {
+    text-align: left;
+  }
+}
+.logo--footer {
+  display: block;
+  margin-bottom: 28px;
+
+  color: var(--white-color);
+}
+.footer-contacts__item {
+  margin-bottom: 9px;
+}
+.footer-contacts__address {
+  color: var(--white-color);
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-contacts__connect {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,30 @@
+.follow-us {
+  text-align: center;
+  @media screen and (min-width: $mob) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desk) {
+    margin-right: 93px;
+    text-align: left;
+  }
+}
+.follow-us > p {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.follow-us__list {
+  display: flex;
+  gap: 10px;
+
+  @media screen and (min-width: $mob) {
+    justify-content: center;
+  }
+}
+.icon__link--footer {
+  fill: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}

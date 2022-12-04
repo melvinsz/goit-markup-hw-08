@@ -1,0 +1,78 @@
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  &__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: $tab) {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+  &__list {
+    display: none;
+    @media screen and (min-width: $tab) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.logo {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav__position {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+  &--current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-bottom: -1px;
+    content: "";
+    background: var(--accent-color);
+    border-radius: 2px;
+
+    transition-property: color;
+    transition-duration: var(--display-time);
+    transition-timing-function: var(--function-time);
+  }
+  &--current,
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.logo-web {
+  color: var(--accent-color);
+  transition-property: color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+}

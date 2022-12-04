@@ -1,0 +1,64 @@
+.contacts {
+  display: none;
+  @media screen and (min-width: $tab) {
+    display: block;
+  }
+  @media screen and (min-width: $desk) {
+    display: flex;
+  }
+}
+.contacts__position {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: $desk) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.contacts__position--mail {
+  @media screen and (min-width: $desk) {
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-right: 40px;
+  }
+}
+.contact__icon--mail {
+  @media screen and (min-width: $tab) and (max-width: $desk) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.contact__icon--phone {
+  @media screen and (min-width: $tab) and (max-width: $desk) {
+    width: 10px;
+    height: 14px;
+  }
+}
+.contacts__position:hover > .contact__icon {
+  fill: var(--accent-color);
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+}
+.contacts__position > .contact__icon {
+  transition-property: fill;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+}

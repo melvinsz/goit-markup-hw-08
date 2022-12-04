@@ -1,0 +1,23 @@
+:root {
+  /* Колір тексту */
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+
+  /* Колір */
+  --accent-color: #2196f3;
+  --secondary-background-color: #2f303a;
+  --white-color: #ffffff;
+  --icon-color: #afb1b8;
+
+  /* Анімація */
+  --display-time: 250ms;
+  --function-time: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* z-index */
+  --main-index: 1000;
+  --second-index: 100;
+  --third-index: 10;
+}
+$mob: 480px;
+$tab: 768px;
+$desk: 1200px;

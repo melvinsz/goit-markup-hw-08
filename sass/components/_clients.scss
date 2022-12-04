@@ -1,0 +1,34 @@
+.clients {
+  @extend %section;
+}
+.clients__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.clients__position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 92px;
+  cursor: pointer;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  transition-property: fill, border-color;
+  transition-duration: var(--display-time);
+  transition-timing-function: var(--function-time);
+
+  @media screen and (min-width: $tab) {
+    width: 226px;
+  }
+  @media screen and (min-width: $desk) {
+    width: 170px;
+  }
+
+  &:hover {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
