@@ -1,6 +1,6 @@
 .follow-us {
   text-align: center;
-  @media screen and (min-width: $mob) {
+  @media screen and (max-width: $tab) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: $desk) {
@@ -20,7 +20,7 @@
   display: flex;
   gap: 10px;
 
-  @media screen and (min-width: $mob) {
+  @media screen and (max-width: $tab) {
     justify-content: center;
   }
 }

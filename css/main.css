@@ -1024,7 +1024,7 @@ body {
 .follow-us {
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .follow-us {
     margin-bottom: 60px;
   }
@@ -1050,7 +1050,7 @@ body {
   display: flex;
   gap: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .follow-us__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1095,8 +1095,11 @@ body {
   background-color: transparent;
   padding: 15px 16px;
   margin-bottom: 20px;
-  width: 450px;
   height: 50px;
+  max-width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: 1.25;
   -webkit-box-align: center;
@@ -1104,7 +1107,7 @@ body {
           align-items: center;
   color: var(--white-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-form__label {
     width: 450px;
   }
