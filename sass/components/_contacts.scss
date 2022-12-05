@@ -1,5 +1,6 @@
 .contacts {
   display: none;
+
   @media screen and (min-width: $tab) {
     display: block;
   }
@@ -12,7 +13,6 @@
   align-items: center;
   gap: 10px;
   margin-right: auto;
-  margin-bottom: 10px;
 
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
@@ -34,9 +34,11 @@
   }
 }
 .contacts__position--mail {
-  @media screen and (min-width: $desk) {
-    margin-right: auto;
+  @media screen and (min-width: $tab) {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desk) {
+    margin-bottom: 0;
     margin-right: 40px;
   }
 }
