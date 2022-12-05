@@ -5,11 +5,13 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .clients__position {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 210px;
   height: 92px;
   cursor: pointer;
