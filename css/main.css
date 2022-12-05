@@ -732,6 +732,11 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 768px) {
+  .team__member:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .team__info {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1183,8 +1188,18 @@ body {
   margin: 0 auto;
   padding: 40px;
   border-radius: 4px;
-  width: 450px;
+  width: 90%;
   background: var(--white-color);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1344,8 +1359,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  font-size: 12px;
   line-height: 1.71;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox {
+    font-size: 14px;
+  }
 }
 
 .modal-checkbox__input {

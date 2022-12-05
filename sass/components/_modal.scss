@@ -10,8 +10,15 @@
   padding: 40px;
   border-radius: 4px;
 
-  width: 450px;
+  width: 90%;
   background: var(--white-color);
+
+  @media screen and (min-width: $mob) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tab) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $desk) {
     width: 528px;
@@ -135,8 +142,13 @@
   justify-content: center;
   margin-bottom: 30px;
 
+  font-size: 12px;
   line-height: 1.71;
   color: var(--primary-text-color);
+
+  @media screen and (min-width: $desk) {
+    font-size: 14px;
+  }
 }
 .modal-checkbox__input {
   appearance: none;
